@@ -2,7 +2,7 @@
 
 > 一个面向企业行政制度问答的智能客服 Demo，使用 DashScope Embedding、Chroma、LangGraph、SQLite 和 Gradio 构建。
 >
-> 项目重点展示大模型应用开发中的知识库问答、检索增强生成、Agent 工作流和会话记忆持久化。
+> 项目重点展示大模型应用开发中的知识库问答、RAG检索增强生成、Agent 工作流和会话记忆持久化。
 
 ## 🖼️ 项目简介
 
@@ -104,11 +104,11 @@ __pycache__/                # Python 缓存
 
 ## 💻 安装
 
-### 1. 克隆仓库
+### 1. 拉取仓库
 
 ```shell
-git clone https://github.com/<your-username>/smart-customer-agent-demo.git
-cd smart-customer-agent-demo
+git clone https://github.com/beuding/langchain-demo.git
+cd langchain-demo
 ```
 
 ### 2. 创建 Python 环境
@@ -215,10 +215,7 @@ python main.py
 
 ## ⚠️ 注意事项
 
-- 不要将 `.env` 或真实 API Key 提交到 GitHub。
-- 如果 API Key 曾经被公开，应立即撤销并重新生成。
 - `data/政策文件.txt` 仅用于演示，正式使用时应替换为公开或脱敏后的企业文档。
-- `chroma_customer_db/` 是本地生成的向量索引，不建议提交到仓库。
 - 当前 Demo 使用固定的 `thread_id`，多个用户同时访问时可能共享会话；正式系统应为每个用户生成独立会话 ID。
 - `qwen-turbo` 和 DashScope Embedding 调用会产生 API 用量，请注意账户余额和调用限制。
 
