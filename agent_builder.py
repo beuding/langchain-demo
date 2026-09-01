@@ -3,7 +3,7 @@ from config import SYSTEM_PROMPT_TPL
 
 def build_agent(llm, tools, system_prompt: str = SYSTEM_PROMPT_TPL, checkpointer=None):
     """
-    创建Agent Graph对象,不再内部打开sqlite连接
+    创建Agent Graph对象
     :param llm: 大模型实例
     :param tools: 工具列表
     :param system_prompt: 系统提示词
